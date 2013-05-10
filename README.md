@@ -19,7 +19,7 @@ When viewing a web page in Mobile Safari, simply activate the LoGoGoIn bookmarkl
 
 ## Requirements
 * Mobile Safari 6.x or higher
-* 1Password iOS app 4.1.x or higher
+* GoGo Internet Inflight Service
 
 ## License
 MIT License - <http://www.opensource.org/licenses/mit-license.php>
@@ -53,6 +53,8 @@ Version 0.0.2: May 9, 2013 - Initial commit
 
 Version 0.0.3: May 9, 2013 - Corrections to ReadMe, bump version
 
+Version 0.0.4: May 10, 2013 - Corrections to ReadMe & License; bump version
+
 <!-- reference links -->
 [nodejs]: http://nodejs.org/
 [npm]: https://npmjs.org/
@@ -60,5 +62,5 @@ Version 0.0.3: May 9, 2013 - Corrections to ReadMe, bump version
 [Gruntfile.js]: https://github.com/mobilemind/logogoin/blob/master/Gruntfile.js
 [uglify-js]: https://npmjs.org/package/uglify-js
 [js2uri]: https://npmjs.org/package/js2uri
-[LoGoGoIn page]: http://mobilemind.github.com/logogoin/
-[Setup LoGoGoIn]: http://mmind.me/_?
+[LoGoGoIn page]: https://github.com/mobilemind/logogoin
+[Setup LoGoGoIn]: http://mmind.me/_?javascript:var%20u='user',p='password',d=document;/%5Ehttps:%5C/%5C/airborne%5C.gogoinflight%5C.com%5C/./.test(location.href)?(d.getElementById('returningRadio').checked=!0,d.getElementById('loginEmail').value=u,d.getElementById('returningRadio').value=p,d.forms%5B0%5D.submit()):location.href='https://airborne.gogoinflight.com/gbp/signInsignUp.do?execution=e2s1';void'0.0.3'

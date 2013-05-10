@@ -1,4 +1,4 @@
-logogoin.js
+LoGoGoIn
 https://github.com/mobilemind/logogoin
 Copyright (c) 2013 Tom King <mobilemind@pobox.com>
 
