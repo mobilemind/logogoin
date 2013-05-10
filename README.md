@@ -1,5 +1,5 @@
 # LoGoGoIn
-OpenIn1Password is a bookmarklet for Mobile Safari. Add the bookmark and use it to
+LoGoGoIn is a bookmarklet for Mobile Safari. Add the bookmark and use it to
 automatically open the GoGo login web page, invoke it again to complete the log-in.
 
 ## Install
@@ -51,6 +51,7 @@ Version 0.0.1: May 9, 2013 - Initial code
 
 Version 0.0.2: May 9, 2013 - Initial commit
 
+Version 0.0.3: May 9, 2013 - Corrections to ReadMe, bump version
 
 <!-- reference links -->
 [nodejs]: http://nodejs.org/
