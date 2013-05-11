@@ -1,6 +1,6 @@
 # LoGoGoIn
-LoGoGoIn is a bookmarklet for Mobile Safari. Add the bookmark and use it to
-automatically open the GoGo login web page, invoke it again to complete the log-in.
+LoGoGoIn is a bookmarklet for Mobile Safari. Use it to access to the GoGo login web page,
+invoke it again to automate log-in.
 
 ## Install
 ### Desktop Browser
@@ -14,8 +14,9 @@ the new bookmark into a bookmarklet (a bookmark that begins with `javascript:`).
 + **Mobile Safari setup link** -- [Setup LoGoGoIn]
 
 ## Use
-When viewing a web page in Mobile Safari, simply activate the LoGoGoIn bookmarklet
-(tap it on bookmark bar or use the Bookmarks menu). Tap it again to complete the log-in.
+When viewing a web page in Mobile Safari, simply activate the LoGoGoIn bookmarklet (tap it
+on bookmark bar or use the Bookmarks menu). Tap it again to complete the log-in. The
+LoGoGoin bookmarklet will prompt for user and password if they are not set.
 
 ## Requirements
 * Mobile Safari 6.x or higher
@@ -26,14 +27,15 @@ MIT License - <http://www.opensource.org/licenses/mit-license.php>
 
 ## Source Code Notes
 The source code is provided in `src/` and a `javascript:` bookmark URL version is in
-`web/`. Simply change the placeholder values of 'user' and 'password' in the `src/`.
+`web/`. Assign values to `u` (username) and optionally `p` (password) in the file
+`src/logogoin.js`.
 
 ## Build
 If `node` is not installed go get it from [nodejs.org][nodejs]. Clone this repository.
 Change to the `logogoin` directory and install `grunt` and `js2uri` into the project.
-Edit the placeholder values of 'user' and 'password' in `src/logogoin.js`. Finally,
-invoke`grunt`. The LoGoGoIn [Gruntfile.js] uses [uglify-js] to minify the code and
-[js2uri] to turn it into a `javascript:` bookmark URL.
+Edit the values of the vars `u` and optionally `p` in `src/logogoin.js` to your username
+and your password (optional). Finally, invoke`grunt`. The LoGoGoIn [Gruntfile.js] uses
+[uglify-js] to minify the code and [js2uri] to turn it into a `javascript:` bookmark URL.
 ```bash
 git clone https://github.com/mobilemind/logogoin.git
 cd logogoin
@@ -55,6 +57,8 @@ Version 0.0.3: May 9, 2013 - Corrections to ReadMe, bump version
 
 Version 0.0.4: May 10, 2013 - Corrections to ReadMe & License; bump version
 
+Version 0.0.5: May 10, 2013 - Runtime prompt for user & password if not set; bump version
+
 <!-- reference links -->
 [nodejs]: http://nodejs.org/
 [npm]: https://npmjs.org/
@@ -63,4 +67,4 @@ Version 0.0.4: May 10, 2013 - Corrections to ReadMe & License; bump version
 [uglify-js]: https://npmjs.org/package/uglify-js
 [js2uri]: https://npmjs.org/package/js2uri
 [LoGoGoIn page]: https://github.com/mobilemind/logogoin
-[Setup LoGoGoIn]: http://mmind.me/_?javascript:var%20u='user',p='password',d=document;/%5Ehttps:%5C/%5C/airborne%5C.gogoinflight%5C.com%5C/./.test(location.href)?(d.getElementById('returningRadio').checked=!0,d.getElementById('loginEmail').value=u,d.getElementById('returningRadio').value=p,d.forms%5B0%5D.submit()):location.href='https://airborne.gogoinflight.com/gbp/signInsignUp.do?execution=e2s1';void'0.0.3'
+[Setup LoGoGoIn]: http://mmind.me/_?javascript:var%20u='',p='',d=document;/%5Ehttps:%5C/%5C/airborne%5C.gogoinflight%5C.com%5C/./.test(location.href)?(d.getElementById('returningRadio').checked=!0,d.getElementById('loginEmail').value=''!==u?u:window.prompt('Username/email:',''),d.getElementById('returningRadio').value=''!==p?p:window.prompt('Password:',''),d.forms%5B0%5D.submit()):location.href='https://airborne.gogoinflight.com/gbp/signInsignUp.do?execution=e2s1';void'0.0.5'
