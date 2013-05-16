@@ -1,7 +1,7 @@
 {
   "name": "logogoin",
   "description": "A bookmarklet for Mobile Safari to automate log-in to GoGo.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/mobilemind/logogoin",
   "author": {
     "name": "\"mobilemind\" Tom King",

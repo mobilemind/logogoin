@@ -59,6 +59,8 @@ Version 0.0.4: May 10, 2013 - Corrections to ReadMe & License; bump version
 
 Version 0.0.5: May 10, 2013 - Runtime prompt for user & password if not set; bump version
 
+Version 0.0.6: May 15, 2013 - Remove test code accidentally left in v0.0.5; update everything & bump version
+
 <!-- reference links -->
 [nodejs]: http://nodejs.org/
 [npm]: https://npmjs.org/
@@ -67,4 +69,4 @@ Version 0.0.5: May 10, 2013 - Runtime prompt for user & password if not set; bum
 [uglify-js]: https://npmjs.org/package/uglify-js
 [js2uri]: https://npmjs.org/package/js2uri
 [LoGoGoIn page]: https://github.com/mobilemind/logogoin
-[Setup LoGoGoIn]: http://mmind.me/_?javascript:var%20u='',p='',d=document;d.getElementById('returningRadio').checked=!0,d.getElementById('loginEmail').value=''!==u?u:window.prompt('Username/email:',''),d.getElementById('loginPassword').value=''!==p?p:window.prompt('Password:',''),d.forms%5B0%5D.submit();void'0.0.5'
+[Setup LoGoGoIn]: http://mmind.me/_?javascript:var%20u='',p='',d=document;/%5Ehttps:%5C/%5C/airborne%5C.gogoinflight%5C.com%5C/./.test(location.href)?(d.getElementById('returningRadio').checked=!0,d.getElementById('loginEmail').value=''!==u?u:window.prompt('Username/email:',''),d.getElementById('loginPassword').value=''!==p?p:window.prompt('Password:',''),d.forms%5B0%5D.submit()):location.href='https://airborne.gogoinflight.com/gbp/signInsignUp.do?execution=e2s1';void'0.0.5'
