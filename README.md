@@ -61,6 +61,8 @@ Version 0.0.5: May 10, 2013 - Runtime prompt for user & password if not set; bum
 
 Version 0.0.6: May 15, 2013 - Remove test code accidentally left in v0.0.5; update everything & bump version
 
+Version 0.0.7: May 25, 2013 - Simplify inits & comparisons for tighter code; update package.json & README
+
 <!-- reference links -->
 [nodejs]: http://nodejs.org/
 [npm]: https://npmjs.org/
