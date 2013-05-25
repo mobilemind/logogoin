@@ -9,29 +9,47 @@ module.exports = function(grunt) {
     jshint: {
       files: ['Gruntfile.js', 'src/*.js'],
       options: {
-        strict: true,
+        bitwise: true,
         latedef: true,
         noarg: true,
         noempty: true,
+        strict: true,
         trailing: true,
         undef: true,
         unused: true,
-        sub: true,
         boss: true,
+        browser: true,
         eqnull: true,
         evil: true,
         lastsemic: true,
         multistr: true,
         scripturl: true,
-        browser: true
+        sub: true
       }
     },
     uglify: {
       'web/logogoin.js': ['src/*.js'],
       options: {
-        mangle: {toplevel: true},
-        squeeze: {sequences: false, conditionals: false, hoist_vars: true},
-        codegen: {quote_keys: false}
+        compress: {
+          sequences: true,
+          properties: true,
+          dead_code: true,
+          drop_debugger: true,
+          unsafe: false,
+          conditionals: true,
+          evaluate: true,
+          booleans: true,
+          loops: true,
+          unused: true,
+          hoist_funs: false,
+          hoist_vars: false,
+          if_return: true,
+          join_vars: true,
+          cascade: true,
+          warnings: true
+          },
+        codegen: {quote_keys: false},
+        report: 'min'
       }
     },
     js2uri:  {
