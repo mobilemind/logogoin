@@ -9,4 +9,3 @@ if (/^https:\/\/airborne\.gogoinflight\.com\/./.test(location.href)) {
   d.forms[0].submit();
 }
 else location.href = 'https://airborne.gogoinflight.com/gbp/signInsignUp.do?execution=e2s1';
-void(0);
