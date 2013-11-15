@@ -4,10 +4,10 @@ module.exports = function(grunt) {
   // Project configuration
   grunt.initConfig({
     meta: {
-      version: '0.0.7'
+      version: '0.0.8'
     },
     jshint: {
-      files: ['Gruntfile.js', 'src/*.js'],
+      files: ['*.js', 'src/*.js'],
       options: {
         bitwise: true,
         latedef: true,
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
       }
     },
     js2uri:  {
-     'web/logogoin.js': ['web/logogoin.js'],
+      'web/logogoin.js': ['web/logogoin.js'],
       options: {
         protocol: 'javascript:',
         useNewlineEOL: true,
