@@ -1,5 +1,5 @@
 # LoGoGoIn
-[![Build Status](https://secure.travis-ci.org/mobilemind/LoGoGoIn.png?branch=master)](http://travis-ci.org/mobilemind/LoGoGoIn)
+[![Build Status](https://secure.travis-ci.org/mobilemind/logogoin.png?branch=master)](http://travis-ci.org/mobilemind/logogoin)
 
 LoGoGoIn is a bookmarklet for Mobile Safari. Use it to access to the GoGo login web page,
 invoke it again to automate log-in.
