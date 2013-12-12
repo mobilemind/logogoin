@@ -1,4 +1,5 @@
 # LoGoGoIn
+[![Build Status](https://secure.travis-ci.org/mobilemind/LoGoGoIn.png?branch=master)](http://travis-ci.org/mobilemind/LoGoGoIn)
 LoGoGoIn is a bookmarklet for Mobile Safari. Use it to access to the GoGo login web page,
 invoke it again to automate log-in.
 
@@ -62,6 +63,9 @@ Version 0.0.5: May 10, 2013 - Runtime prompt for user & password if not set; bum
 Version 0.0.6: May 15, 2013 - Remove test code accidentally left in v0.0.5; update everything & bump version
 
 Version 0.0.7: May 25, 2013 - Simplify inits & comparisons for tighter code; update package.json & README
+
+Version 0.0.8: December 12, 2013 - Integrate Travis CI <http://travis-ci.org> into build
+
 
 <!-- reference links -->
 [nodejs]: http://nodejs.org/

@@ -3,9 +3,7 @@ module.exports = function(grunt) {
   "use strict";
   // Project configuration
   grunt.initConfig({
-    meta: {
-      version: '0.0.8'
-    },
+    pkg: grunt.file.readJSON('package.json'),
     jshint: {
       files: ['*.js', 'src/*.js'],
       options: {
