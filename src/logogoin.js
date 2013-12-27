@@ -1,4 +1,4 @@
-/*jshint globalstrict: true*/
+/* jshint strict: true */
 // complete login form if current page is the login page
 // else open that page
 var u, p, d = document;
