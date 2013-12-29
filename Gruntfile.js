@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     jshint: {
-      files: ['*.js', 'src/*.js'],
+      files: ['Gruntfile.js', 'src/logogoin.js'],
       options: {
         bitwise: true,
         latedef: true,
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
-      'web/logogoin.js': ['src/*.js'],
+      'web/logogoin.js': ['src/logogoin.js'],
       options: {
         compress: {
           sequences: true,
