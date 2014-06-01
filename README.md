@@ -67,6 +67,10 @@ Version 0.0.7: May 25, 2013 - Simplify inits & comparisons for tighter code; upd
 
 Version 0.0.8: December 12, 2013 - Integrate Travis CI <http://travis-ci.org> into build
 
+Version 0.0.9: December 27, 2013 - Update to grunt-contrib-jshint 0.8.x
+
+Version 0.0.10: May 9, 2014 Update package.json to use latest jshint and uglify
+
 
 <!-- reference links -->
 [nodejs]: http://nodejs.org/
