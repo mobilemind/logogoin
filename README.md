@@ -2,6 +2,7 @@
 
 Travis: [![Build Status](https://secure.travis-ci.org/mobilemind/logogoin.png?branch=master)](http://travis-ci.org/mobilemind/logogoin)
 Codeship: [ ![Codeship Status for mobilemind/logogoin](https://www.codeship.io/projects/8b049b70-e11c-0131-5e56-2647223cc3b1/status)](https://www.codeship.io/projects/25192)
+Drone.io [![Build Status](https://drone.io/github.com/mobilemind/logogoin/status.png)](https://drone.io/github.com/mobilemind/logogoin/latest)
 
 LoGoGoIn is a bookmarklet for Mobile Safari. Use it to access to the GoGo login web page,
 invoke it again to automate log-in.
