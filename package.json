@@ -1,7 +1,7 @@
 {
   "name": "logogoin",
   "description": "A bookmarklet for Mobile Safari to automate log-in to GoGo.",
-  "version": "0.0.11",
+  "version": "0.0.13",
   "homepage": "https://github.com/mobilemind/logogoin",
   "author": {
     "name": "\"mobilemind\" Tom King",
@@ -15,25 +15,23 @@
   "bugs": {
     "url": "https://github.com/mobilemind/logogoin/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.github.com/mobilemind/logogoin/master/LICENSE.TXT"
-    }
-  ],
+  "license": "MIT",
   "main": "Gruntfile.js",
   "engines": {
-    "node": "0.10.x"
+    "node": ">=0.10.0 <0.13.0"
   },
-  "dependencies": {
-    "grunt-cli": "0.1.x",
+  "devDependencies": {
     "grunt": "0.4.x",
-    "grunt-contrib-jshint": "0.10.x",
-    "grunt-contrib-uglify": "0.7.x",
+    "grunt-contrib-clean": "0.6.x",
+    "grunt-contrib-jshint": "0.11.x",
+    "grunt-contrib-uglify": ">=0.7.0 <0.10.0",
     "js2uri": "1.3.x"
   },
+  "dependencies": {
+  },
   "scripts": {
-    "test": "grunt"
+    "preinstall": "npm install -g grunt-cli",
+    "test": "grunt --verbose"
   },
   "keywords": [
     "bookmarklet"
