@@ -54,6 +54,10 @@ project directory using `npm update` at any time or just invoke `grunt` to rebui
 LoGoGoIn.
 
 ## Version Notes
+Version 0.0.13: no functional changes; tons of changes to CI & badging and README
+
+Version 0.0.12: not sure what happened to this build
+
 Version 0.0.11: January 16, 2015 Update package.json to use latest uglify
 
 Version 0.0.10: May 9, 2014 Update package.json to use latest jshint and uglify (re-committed 06-01-14)
