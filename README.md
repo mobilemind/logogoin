@@ -1,6 +1,6 @@
 # LoGoGoIn
 
-[![Build Status][build-image]][build-url]
+[![Current Tag][tag-image]][tag-url] [![Build Status][build-image]][build-url]
 [![Dependency Status][dep-image]][dep-url] [![devDependency Status][devDep-image]][devDep-url]
 
 LoGoGoIn is a bookmarklet for Mobile Safari. Use it to access to the GoGo login web page,
@@ -64,7 +64,7 @@ Version 0.0.10: May 9, 2014 Update package.json to use latest jshint and uglify 
 
 Version 0.0.9: December 27, 2013 - Update to grunt-contrib-jshint 0.8.x
 
-Version 0.0.8: December 12, 2013 - Integrate Travis CI <http://travis-ci.org> into build
+Version 0.0.8: December 12, 2013 - Integrate Travis CI <https://travis-ci.org> into build
 
 Version 0.0.7: May 25, 2013 - Simplify inits & comparisons for tighter code; update package.json & README
 
@@ -83,6 +83,10 @@ Version 0.0.1: May 9, 2013 - Initial code
 
 <!-- reference URLs -->
 
+[tag-image]: https://img.shields.io/github/tag/mobilemind/logogoin.svg
+
+[tag-url]: https://github.com/mobilemind/logogoin/tags
+
 [build-image]: https://secure.travis-ci.org/mobilemind/logogoin.svg?branch=master
 
 [build-url]: https://travis-ci.org/mobilemind/logogoin
@@ -91,13 +95,13 @@ Version 0.0.1: May 9, 2013 - Initial code
 
 [npm-url]: https://www.npmjs.com/package/logogoin
 
-[dep-image]: https://david-dm.org/mobilemind/logogoin.svg
+[dep-image]: https://david-dm.org/mobilemind/logogoin.svg?branch=master
 
 [dep-url]: https://david-dm.org/mobilemind/logogoin
 
-[devDep-image]: https://img.shields.io/david/dev/mobilemind/logogoin.svg
+[devDep-image]: https://img.shields.io/david/dev/mobilemind/logogoin.svg?branch=master
 
-[devDep-url]: https://david-dm.org/mobilemind/logogoin#info=devDependencies
+[devDep-url]: https://david-dm.org/mobilemind/logogoin#info=devDependencies?branch=master
 
 [nodejs]: http://nodejs.org/
 
