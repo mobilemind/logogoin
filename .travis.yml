@@ -1,9 +1,10 @@
 branches:
   except:
     - gh-pages
+sudo: false
 language: node_js
 node_js:
   - "0.10"
-cache:
-  directories:
-    - node_modules
+  - "0.11"
+  - "0.12"
+  - "iojs"
