@@ -4,6 +4,9 @@ module.exports = function(grunt) {
   // Project configuration
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    clean: {
+      files: ['web/logogoin.*']
+    },
     jshint: {
       files: ['Gruntfile.js', 'src/logogoin.js'],
       options: {
@@ -51,7 +54,7 @@ module.exports = function(grunt) {
       }
     },
     js2uri:  {
-      'web/logogoin.js': ['web/logogoin.js'],
+      'web/logogoin.js.url': ['web/logogoin.js'],
       options: {
         protocol: 'javascript:',
         useNewlineEOL: true,
@@ -66,15 +69,14 @@ module.exports = function(grunt) {
     }
   });
 
-  // Load "jshint" plugin
+  // Load plugins
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-
-  // Load "uglify" plugin
   grunt.loadNpmTasks('grunt-contrib-uglify');
-
-  // Load "js2uri" plugin
   grunt.loadNpmTasks('js2uri');
 
   // Default task
-  grunt.registerTask('default', [ "jshint", "uglify", "js2uri"] );
+  grunt.registerTask('default', [ "clean", "jshint", "uglify", "js2uri"] );
+  // test task
+  grunt.registerTask('test', [ "default"] );
 };
