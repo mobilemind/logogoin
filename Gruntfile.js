@@ -5,6 +5,10 @@ module.exports = function (grunt) {
   // Project configuration
   grunt.initConfig({
     "clean": {"files": ["web/logogoin.*"]},
+    "eslint": {
+      "options": {"configFile": ".eslintrc.yml"},
+      "target": ["Gruntfile.js", "src/*.js"]
+    },
     "js2uri": {
       "options": {
         "appendVersion": true,
@@ -18,29 +22,6 @@ module.exports = function (grunt) {
         "useSingleQuote": true
       },
       "web/logogoin.js.url": ["web/logogoin.js"]
-    },
-    "jshint": {
-      "files": ["Gruntfile.js", "src/logogoin.js"],
-      "options": {
-        "bitwise": true,
-        "boss": true,
-        "browser": true,
-        "eqnull": true,
-        "esversion": 6,
-        "evil": true,
-        "lastsemic": true,
-        "latedef": true,
-        "multistr": true,
-        "noarg": true,
-        "noempty": true,
-        "node": true,
-        "scripturl": true,
-        "strict": true,
-        "sub": true,
-        "trailing": true,
-        "undef": true,
-        "unused": true
-      }
     },
     "pkg": grunt.file.readJSON("package.json"),
     "uglify": {
@@ -67,17 +48,19 @@ module.exports = function (grunt) {
         "report": "min"
       },
       "web/logogoin.js": ["src/logogoin.js"]
-    }
+    },
+    "yamllint": {"files": {"src": [".*.yml", "*.yml", "*.yaml"]}}
   });
 
   // Load plugins
   grunt.loadNpmTasks("grunt-contrib-clean");
-  grunt.loadNpmTasks("grunt-contrib-jshint");
   grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.loadNpmTasks("grunt-eslint");
+  grunt.loadNpmTasks("grunt-yamllint");
   grunt.loadNpmTasks("js2uri");
 
   // Default task
-  grunt.registerTask("default", ["clean", "jshint", "uglify", "js2uri"]);
+  grunt.registerTask("default", ["yamllint", "eslint", "clean", "uglify", "js2uri"]);
   // test task
   grunt.registerTask("test", ["default"]);
 };
