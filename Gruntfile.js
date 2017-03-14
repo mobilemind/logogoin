@@ -1,12 +1,11 @@
 /*global module:false*/
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   "use strict";
+
   // Project configuration
   grunt.initConfig({
-    "clean": {
-      "files": ["web/logogoin.*"]
-    },
-    "js2uri":  {
+    "clean": {"files": ["web/logogoin.*"]},
+    "js2uri": {
       "options": {
         "appendVersion": true,
         "appendVoid": true,
@@ -27,6 +26,7 @@ module.exports = function(grunt) {
         "boss": true,
         "browser": true,
         "eqnull": true,
+        "esversion": 6,
         "evil": true,
         "lastsemic": true,
         "latedef": true,
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("js2uri");
 
   // Default task
-  grunt.registerTask("default", [ "clean", "jshint", "uglify", "js2uri"] );
+  grunt.registerTask("default", ["clean", "jshint", "uglify", "js2uri"]);
   // test task
-  grunt.registerTask("test", [ "default"] );
+  grunt.registerTask("test", ["default"]);
 };
