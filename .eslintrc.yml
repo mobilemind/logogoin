@@ -40,10 +40,10 @@ rules:
   class-methods-use-this: 2
   complexity: [2, 12]
   consistent-return: 2
-  curly: 0
+  curly: 2
   default-case: 2
   guard-for-in: 2
-  no-alert: 2
+  no-alert: 0
   no-caller: 2
   no-div-regex: 2
   no-else-return: 2
@@ -153,7 +153,7 @@ rules:
   max-params: [2, 5]
   max-statements-per-line: 2
   max-statements: [2, 30]
-  multiline-ternary: 2
+  multiline-ternary: 0
   new-cap: 2
   new-parens: 2
   newline-after-var: 0
@@ -172,7 +172,7 @@ rules:
   no-plusplus: 2
   no-restricted-syntax: 2
   no-tabs: 2
-  no-ternary: 2
+  no-ternary: 0
   no-trailing-spaces: 2
   no-underscore-dangle: 2
   no-unneeded-ternary: 2
@@ -181,20 +181,20 @@ rules:
   object-curly-newline: 2
   object-curly-spacing: 2
   object-property-newline: 2
-  one-var-declaration-per-line: 2
+  one-var-declaration-per-line: 0
   one-var: 0
   operator-assignment: 2
   operator-linebreak: 2
   padded-blocks: 0
   quote-props: 2
   quotes: 0
-  require-jsdoc: 0
+  require-jsdoc: 2
   semi-spacing: 2
   semi: 2
   sort-keys: 0
   sort-vars: 2
   space-before-blocks: 2
-  space-before-function-paren: 0
+  space-before-function-paren: 2
   space-in-parens: 2
   space-infix-ops: 2
   space-unary-ops: 2
@@ -240,7 +240,7 @@ rules:
   security/detect-eval-with-expression: 2
   security/detect-no-csrf-before-method-override: 2
   security/detect-non-literal-fs-filename: 2
-  security/detect-non-literal-regexp: 0
+  security/detect-non-literal-regexp: 2
   security/detect-non-literal-require: 2
   security/detect-object-injection: 2
   security/detect-possible-timing-attacks: 2
