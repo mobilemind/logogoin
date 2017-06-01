@@ -1,27 +1,17 @@
 {
-  "name": "logogoin",
-  "description": "A bookmarklet for Mobile Safari to automate log-in to GoGo.",
-  "version": "0.0.15",
-  "homepage": "https://github.com/mobilemind/logogoin",
   "author": {
-    "name": "\"mobilemind\" Tom King",
     "email": "mobilemind@pobox.com",
+    "name": "\"mobilemind\" Tom King",
     "url": "https://mobilemind.net/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mobilemind/logogoin.git"
   },
   "bugs": {
     "url": "https://github.com/mobilemind/logogoin/issues"
   },
-  "license": "MIT",
-  "main": "Gruntfile.js",
   "engines": {
-    "node": ">=7.0.0"
+    "node": ">=7.5.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
+  "description": "A bookmarklet for Mobile Safari to automate log-in to GoGo.",
   "devDependencies": {
     "eslint": ">=3.17.0",
     "eslint-plugin-no-storage": ">=1.0.2",
@@ -34,10 +24,17 @@
     "grunt-yamllint": ">=0.2.0",
     "js2uri": "1.4.x"
   },
+  "homepage": "https://github.com/mobilemind/logogoin",
+  "keywords": ["bookmarklet"],
+  "license": "MIT",
+  "main": "Gruntfile.js",
+  "name": "logogoin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mobilemind/logogoin.git"
+  },
   "scripts": {
     "test": "grunt --verbose"
   },
-  "keywords": [
-    "bookmarklet"
-  ]
+  "version": "0.0.15"
 }
