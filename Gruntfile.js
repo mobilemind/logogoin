@@ -49,7 +49,10 @@ module.exports = function (grunt) {
       },
       "web/logogoin.js": ["src/logogoin.js"]
     },
-    "yamllint": {"files": {"src": [".*.yml", "*.yml", "*.yaml"]}}
+    "yamllint": {
+      "files": {"src": [".*.yml", "*.yml", "*.yaml"]},
+      "options": {"schema": "FAILSAFE_SCHEMA"}
+    }
   });
 
   // Load plugins
