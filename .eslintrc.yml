@@ -15,12 +15,14 @@ parserOptions:
   sourceType: script
 
 plugins:
+- compat
 - no-storage
+- no-unsanitized
 - security
 - xss
 
 # http://eslint.org/docs/rules/
-extends: eslint:recommended
+extends: [eslint:recommended, plugin:security/recommended]
 rules:
   # Possible Errors
   for-direction: 2
@@ -227,23 +229,18 @@ rules:
   template-curly-spacing: 2
   yield-star-spacing: 2
 
+  # compat
+  compat/compat: 2
+
   # no-storage
   no-storage/no-browser-storage: 2
 
-  # security
-  security/detect-unsafe-regex: 2
-  security/detect-buffer-noassert: 2
-  security/detect-child-process: 2
-  security/detect-disable-mustache-escape: 2
-  security/detect-eval-with-expression: 2
-  security/detect-no-csrf-before-method-override: 2
-  security/detect-non-literal-fs-filename: 2
-  security/detect-non-literal-regexp: 2
-  security/detect-non-literal-require: 2
-  security/detect-object-injection: 2
-  security/detect-possible-timing-attacks: 2
-  security/detect-pseudoRandomBytes: 2
+  #  no-unsanitized
+  no-unsanitized/method: 2
+  no-unsanitized/property: 2
+
+  # security - use recommended
 
   # xss
-  xss/no-location-href-assign: 0
+  xss/no-location-href-assign: 2
   xss/no-mixed-html: 2
