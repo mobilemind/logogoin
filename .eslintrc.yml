@@ -242,5 +242,5 @@ rules:
   # security - use recommended
 
   # xss
-  xss/no-location-href-assign: 2
+  xss/no-location-href-assign: 0
   xss/no-mixed-html: 2
