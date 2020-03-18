@@ -4,6 +4,7 @@ branches:
 sudo: false
 language: node_js
 node_js:
-- '8'
+- '12'
+- '13'
 before_install:
 - npm set progress=false ; npm install -g grunt-cli
