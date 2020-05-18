@@ -56,7 +56,7 @@ module.exports = function (grunt) {
 
   // Load plugins
   grunt.loadNpmTasks("grunt-contrib-clean");
-  grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.loadNpmTasks("@sailshq/grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-eslint");
   grunt.loadNpmTasks("grunt-yamllint");
   grunt.loadNpmTasks("js2uri");

@@ -1,7 +1,7 @@
 # LoGoGoIn
 
 [![Current Tag][tag-image]][tag-url] [![Build Status][build-image]][build-url]
-[![Dependency Status][dep-image]][dep-url] [![devDependency Status][devDep-image]][devDep-url]
+<!-- [![Dependency Status][dep-image]][dep-url] [![devDependency Status][devDep-image]][devDep-url] -->
 
 LoGoGoIn is a bookmarklet for Mobile Safari. Use it to access to the GoGo login web page,
 invoke it again to automate log-in.
@@ -54,6 +54,9 @@ project directory using `npm update` at any time or just invoke `grunt` to rebui
 LoGoGoIn.
 
 ## Version Notes
+
+Version 0.0.17: no functional changes; update dependencies, remove david-dm.org badges; bump version
+
 Version 0.0.13: no functional changes; tons of changes to CI & badging and README
 
 Version 0.0.12: not sure what happened to this build
@@ -95,13 +98,15 @@ Version 0.0.1: May 9, 2013 - Initial code
 
 [npm-url]: https://www.npmjs.com/package/logogoin
 
-[dep-image]: https://david-dm.org/mobilemind/logogoin.svg?branch=master
+<!-- 
+[dep-image]: https://img.shields.io/david/dep/mobilemind/logogoin.svg?branch=master
 
 [dep-url]: https://david-dm.org/mobilemind/logogoin
 
 [devDep-image]: https://img.shields.io/david/dev/mobilemind/logogoin.svg?branch=master
 
 [devDep-url]: https://david-dm.org/mobilemind/logogoin#info=devDependencies?branch=master
+-->
 
 [nodejs]: http://nodejs.org/
 
