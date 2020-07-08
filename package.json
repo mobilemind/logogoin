@@ -18,12 +18,12 @@
     "eslint-plugin-no-unsanitized": ">=3.1.2",
     "eslint-plugin-security": ">=1.4.0",
     "eslint-plugin-xss": ">=0.1.10",
-    "grunt": ">=1.1.0",
+    "grunt": ">=1.2.1",
     "grunt-contrib-clean": ">=2.0.0",
     "@sailshq/grunt-contrib-uglify": "3.2.1",
     "grunt-eslint": ">=23.0.0",
     "grunt-yamllint": ">=0.3.0",
-    "js2uri": ">=1.8.0"
+    "js2uri": ">=1.8.1"
   },
   "homepage": "https://github.com/mobilemind/logogoin",
   "keywords": [
