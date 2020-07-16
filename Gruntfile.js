@@ -28,7 +28,6 @@ module.exports = function (grunt) {
         "codegen": {"quote_keys": false},
         "compress": {
           "booleans": true,
-          "cascade": true,
           "conditionals": true,
           "dead_code": true,
           "drop_debugger": true,
@@ -56,7 +55,7 @@ module.exports = function (grunt) {
 
   // Load plugins
   grunt.loadNpmTasks("grunt-contrib-clean");
-  grunt.loadNpmTasks("@sailshq/grunt-contrib-uglify");
+  grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-eslint");
   grunt.loadNpmTasks("grunt-yamllint");
   grunt.loadNpmTasks("js2uri");
