@@ -8,22 +8,22 @@
     "url": "https://github.com/mobilemind/logogoin/issues"
   },
   "engines": {
-    "node": ">12.0"
+    "node": ">16.0"
   },
   "dependencies": {},
   "description": "A bookmarklet for Mobile Safari to automate log-in to GoGo.",
   "devDependencies": {
-    "eslint-plugin-compat": ">=3.8.0",
+    "eslint-plugin-compat": ">=4.0.0",
     "eslint-plugin-no-storage": ">=1.0.2",
-    "eslint-plugin-no-unsanitized": ">=3.1.2",
+    "eslint-plugin-no-unsanitized": ">=4.0.0",
     "eslint-plugin-security": ">=1.4.0",
-    "eslint-plugin-xss": ">=0.1.10",
-    "grunt": ">=1.2.1",
+    "eslint-plugin-xss": ">=0.1.11",
+    "grunt": ">=1.4.1",
     "grunt-contrib-clean": ">=2.0.0",
-    "grunt-contrib-uglify": "git+https://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
-    "grunt-eslint": ">=23.0.0",
+    "grunt-contrib-uglify": ">=5.0.1",
+    "grunt-eslint": ">=24.0.0",
     "grunt-yamllint": ">=0.3.0",
-    "js2uri": ">=1.8.1"
+    "js2uri": ">=1.9.0"
   },
   "homepage": "https://github.com/mobilemind/logogoin",
   "keywords": [
