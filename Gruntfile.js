@@ -5,7 +5,6 @@ module.exports = function (grunt) {
   grunt.initConfig({
     "clean": {"files": ["web/logogoin.*"]},
     "eslint": {
-      "options": {"configFile": ".eslintrc.yml"},
       "target": ["Gruntfile.js", "src/*.js"]
     },
     "js2uri": {
@@ -40,8 +39,7 @@ module.exports = function (grunt) {
           "properties": true,
           "sequences": true,
           "unsafe": false,
-          "unused": true,
-          "warnings": true
+          "unused": true
           },
         "report": "min"
       },
